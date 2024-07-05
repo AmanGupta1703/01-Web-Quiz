@@ -6,7 +6,7 @@ function ProgressBar() {
 
   const totalQuestions = quizData?.length;
 
-  const progressPercentage = parseInt((currentIndex / totalQuestions) * 100);
+  const progressPercentage = Math.floor((currentIndex / totalQuestions) * 100);
 
   return (
     <div className="progress">
